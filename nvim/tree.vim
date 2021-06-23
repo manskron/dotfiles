@@ -12,6 +12,8 @@ let g:nvim_tree_add_trailing = 1 "0 by default, append a trailing slash to folde
 let g:nvim_tree_group_empty = 1 " 0 by default, compact folders that only contain a single folder into one node in the file tree
 let g:nvim_tree_lsp_diagnostics = 1 "0 by default, will show lsp diagnostics in the signcolumn. See :help nvim_tree_lsp_diagnostics
 let g:nvim_tree_disable_window_picker = 1 "0 by default, will disable the window picker.
+let g:nvim_tree_width = 40 "30 by default
+let g:nvim_tree_width_allow_resize  = 1 "0 by default, will not resize the tree when opening a file
 let g:nvim_tree_window_picker_exclude = {
     \   'filetype': [
     \     'packer',

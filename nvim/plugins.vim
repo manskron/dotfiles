@@ -19,6 +19,7 @@ Plug 'neovim/nvim-lspconfig'
 
 "Theme
 Plug 'folke/tokyonight.nvim', {'branch': 'main'}
+Plug 'shaunsingh/solarized.nvim'
 
 "Telescope
 Plug 'nvim-lua/popup.nvim'

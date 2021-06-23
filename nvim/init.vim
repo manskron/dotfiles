@@ -8,6 +8,7 @@ source ~/nvim/keys.vim
 source ~/nvim/tree.vim
 
 set termguicolors
+let g:tokyonight_style = "day"
 colorscheme tokyonight
 
 "GENERAL
