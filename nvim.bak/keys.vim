@@ -14,6 +14,8 @@ autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 nmap <Leader>C :ClangFormatAutoToggle<CR>
 
+"javascript
+nnoremap <leader>p :PrettierAsync<CR>
 " LSP
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>

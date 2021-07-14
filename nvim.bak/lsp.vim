@@ -34,7 +34,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "tsserver", "elmls"}
+local servers = {"elmls"}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
@@ -50,5 +50,10 @@ nvim_lsp.denols.setup{
 nvim_lsp.tsserver.setup{
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("tsconfig.json")
+}
+
+nvim_lsp.hls.setup{
+  on_attach = on_attach,
+  root_dir = nvim_lsp.util.root_pattern("*.hs")
 }
 EOF

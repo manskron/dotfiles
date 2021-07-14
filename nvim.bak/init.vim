@@ -8,8 +8,13 @@ source ~/nvim/keys.vim
 source ~/nvim/tree.vim
 
 set termguicolors
-let g:tokyonight_style = "day"
-colorscheme tokyonight
+" let g:tokyonight_style = "day"
+" colorscheme tokyonigh
+lua << EOF
+require('github-theme').setup({
+  themeStyle = "light"
+})
+EOF
 
 "GENERAL
 "allow tabcompletion for all files found
